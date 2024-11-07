@@ -1,0 +1,88 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Jura', sans-serif;
+    background: linear-gradient(135deg, #C26060, #6F2D2D);  
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Center the Title */
+.container {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Title Styling with increased letter spacing */
+.title {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 25px; /* Increased letter spacing */
+}
+
+/* Align Main Buttons to the Right */
+.main-buttons {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-buttons button {
+    width: 350px; /* Increased button width */
+    padding: 18px; /* Slightly increased padding */
+    margin: 15px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.main-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Footer Buttons Styling */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer button {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #8c2d2d;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer button:hover {
+    background-color: #8c2d2d;
+    color: #fff;
+}

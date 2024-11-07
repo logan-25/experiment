@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Sync</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">DONOR SYNC</h1>
+    </div>
+    <div class="main-buttons">
+        <button onclick="navigateTo('volunteer')" >Volunteer Donation</button>
+        <button onclick="navigateTo('bloodbank')">Blood Bank</button>
+        <button onclick="navigateTo('hospital')">Hospitals</button>
+    </div>
+    <div class="footer">
+        <button onclick="navigateTo('contact')">Contact and Support</button>
+        <button onclick="navigateTo('about')">About Us</button>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            switch(page) {
+                case 'volunteer':
+                    window.location.href = 'volunteer.html';
+                    break;
+                case 'bloodbank':
+                    window.location.href = 'bood-bank-registation.html';
+                    break;
+                case 'hospital':
+                    window.location.href = 'hospital.html';
+                    break;
+                case 'contact':
+                    window.location.href = 'contact.html';
+                    break;
+                case 'about':
+                    window.location.href = 'about.html';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Registration - Donor Sync</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap">
+    <link rel="stylesheet" href="/static/bbregistraion.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">BLOOD BANK REGISTRATION</h1>
+    </div>
+      
+    <div class="form-container">
+        <form action="submit_registration" method="post">
+            <h2>General Blood Bank Information</h2>
+            <label for="name">Blood Bank Name</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="reg_number">License Number</label>
+            <input type="text" id="reg_number" name="reg_number" required>
+            <br><br>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            <br><br>
+
+            <label for="contact_email">Contact Email</label>
+            <input type="email" id="contact_email" name="contact_email" required>
+            <br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <h2>Authorized Personnel Information</h2>
+            <label for="contact_person">Name of Authorized Contact Person</label>
+            <input type="text" id="contact_person" name="contact_person" required>
+            <br><br>
+
+            <label for="role">Role/Designation</label>
+            <input type="text" id="role" name="role" required>
+            <br><br>
+
+            <label for="person_phone">Authorized Contact Person Phone</label>
+            <input type="tel" id="person_phone" name="person_phone" required>
+            <br><br>
+
+            <label for="person_email">Authorized Contact Person Email</label>
+            <input type="email" id="person_email" name="person_email" required>
+            <br><br>
+
+            <label for="id_proof">Government-Issued ID Proof</label>
+            <input type="file" id="id_proof" name="id_proof" accept=".pdf,.jpg,.png" required>
+            <br><br>
+
+            <h2>Verification Documents</h2>
+            <label for="license">Upload License Certificate</label>
+            <input type="file" id="license" name="license" accept=".pdf,.jpg,.png" required>
+            <br><br>
+
+            <label for="approval">Approval Document (if applicable)</label>
+            <input type="file" id="approval" name="approval" accept=".pdf,.jpg,.png">
+            <br><br>
+
+            <h2>Inventory Management</h2>
+            <label>Blood Types Available</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="blood_type" value="A+" id="a_pos">
+                <label for="a_pos">A+</label>
+                <input type="checkbox" name="blood_type" value="A-" id="a_neg">
+                <label for="a_neg">A-</label>
+                <input type="checkbox" name="blood_type" value="B+" id="b_pos">
+                <label for="b_pos">B+</label>
+                <input type="checkbox" name="blood_type" value="B-" id="b_neg">
+                <label for="b_neg">B-</label>
+                <input type="checkbox" name="blood_type" value="AB+" id="ab_pos">
+                <label for="ab_pos">AB+</label>
+                <input type="checkbox" name="blood_type" value="AB-" id="ab_neg">
+                <label for="ab_neg">AB-</label>
+                <input type="checkbox" name="blood_type" value="O+" id="o_pos">
+                <label for="o_pos">O+</label>
+                <input type="checkbox" name="blood_type" value="O-" id="o_neg">
+                <label for="o_neg">O-</label>
+            </div>
+            <br><br>
+
+            <label for="capacity">Capacity of Blood Storage</label>
+            <input type="number" id="capacity" name="capacity" placeholder="in units">
+            <br><br>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <button onclick="navigateTo('contact')">Contact and Support</button>
+        <button onclick="navigateTo('about')">About Us</button>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            if (page === 'contact') {
+                window.location.href = 'contact.html';
+            } else if (page === 'about') {
+                window.location.href = 'about.html';
+            }
+        }
+    </script>
+</body>
+</html>

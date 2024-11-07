@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Donation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap">
+    <link rel="stylesheet" href="/static/volunteere.css">
+</head>
+<body>
+    <div class="header">
+        <div class="circle"></div>
+        <button class="profile-button" onclick="navigateTo('profile')">Profile</button>
+    </div>
+    <div class="container">
+        <h1 class="title">VOLUNTEER DONATION</h1>
+    </div>
+    <div class="main-buttons">
+        <button onclick="navigateTo('volunteer')">Campaigns</button>
+        <button onclick="navigateTo('bloodbank')">Blood Request</button>
+        <button onclick="navigateTo('hospital')">Nearby Blood Banks</button>
+    </div>
+    <div class="footer">
+        <button onclick="navigateTo('contact')">Contact and Support</button>
+        <button onclick="navigateTo('about')">About Us</button>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            switch(page) {
+                case 'volunteer':
+                    window.location.href = 'volunteer_registration.html';
+                    break;
+                case 'bloodbank':
+                    window.location.href = 'bloodbank.html';
+                    break;
+                case 'hospital':
+                    window.location.href = 'hospital.html';
+                    break;
+                case 'contact':
+                    window.location.href = 'contact.html';
+                    break;
+                case 'about':
+                    window.location.href = 'about.html';
+                    break;
+                case 'profile':
+                    window.location.href = 'profile.html';
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
